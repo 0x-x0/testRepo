@@ -6,12 +6,6 @@ resources:
       sourceName: chetantarale/sample-script
       branch: master
 
-  - name: runImage
-    type: image
-    integration: dockerhub
-    pointer:
-      sourceName: "library/nginx"
-      isPull: false
-    seed:
-      versionName: latest
-
+  - name: rsakey
+    type: integration
+    integration: "rsakey"

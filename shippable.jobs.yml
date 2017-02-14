@@ -4,6 +4,6 @@ jobs:
     steps:
       - IN: sample-script
       - IN: triggertest1
-      - OUT: runImage
+      - IN: rsakey
       - TASK:
         - script: IN/sample-script/gitRepo/echo.sh
