@@ -19,4 +19,5 @@ jobs:
         - script: echo "building..."
         - script: ls
         - script: docker build -t runimagein .
-        - script: versionName="latest2" > /build/state/runimagein.env
+        - script: versionName="latest2" >> /build/state/runimagein.env
+        - script: versionName="latest2" >> /build/state/buildJob.env
