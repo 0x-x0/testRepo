@@ -8,3 +8,11 @@ jobs:
       - IN: runImageIn
       - TASK:
         - script: IN/sample-script/gitRepo/echo.sh
+
+  - name: buildJob
+    type: runSh
+    steps:
+      - IN: 5134
+      - OUT: runImageIn
+      - TASK:
+        - script: docker build -t=0 chetantarale/test:latest .

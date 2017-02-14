@@ -18,3 +18,10 @@ resources:
   - name: rsakey
     type: integration
     integration: "rsakey"
+
+  - name: 5134
+    type: gitRepo
+    integration: github
+    pointer:
+      sourceName: chetantarale/5134
+      branch: master
