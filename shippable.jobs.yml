@@ -19,3 +19,4 @@ jobs:
         - script: echo "building..."
         - script: ls
         - script: docker build -t docker-whale .
+        - script: versionName="latest2" > /build/state/buildJob.env
