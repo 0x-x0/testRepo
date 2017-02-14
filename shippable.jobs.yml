@@ -15,4 +15,5 @@ jobs:
       - IN: fiveOnethreefour
       - OUT: runImageIn
       - TASK:
+        - script: cd IN/fiveOnethreefour/gitRepo
         - script: docker build -t=0 chetantarale/test:latest .
