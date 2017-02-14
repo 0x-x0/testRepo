@@ -18,4 +18,4 @@ jobs:
         - script: cd IN/fiveOnethreefour/gitRepo
         - script: echo "building..."
         - script: ls
-        - script: docker build -t=0 chetantarale/test:latest .
+        - script: docker build -t docker-whale .
