@@ -19,7 +19,7 @@ resources:
     type: integration
     integration: "rsakey"
 
-  - name: 5134
+  - name: fiveOnethreefour
     type: gitRepo
     integration: github
     pointer:

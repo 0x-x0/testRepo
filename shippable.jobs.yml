@@ -12,7 +12,7 @@ jobs:
   - name: buildJob
     type: runSh
     steps:
-      - IN: 5134
+      - IN: fiveOnethreefour
       - OUT: runImageIn
       - TASK:
         - script: docker build -t=0 chetantarale/test:latest .
