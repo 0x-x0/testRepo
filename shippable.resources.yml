@@ -25,3 +25,8 @@ resources:
     pointer:
       sourceName: chetantarale/5134
       branch: master
+
+  - name: version
+    type: version
+    seed:
+      versionName: "1.0.0"
