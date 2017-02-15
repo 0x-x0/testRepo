@@ -19,4 +19,4 @@ jobs:
         - script: echo "building..."
         - script: ls
         - script: docker build -t runimagein .
-        - script: echo "versionName='latest' >> /build/state/runimagein.env"
+        - script: echo "versionName='$USER' >> /build/state/runimagein.env"
