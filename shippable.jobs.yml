@@ -15,4 +15,4 @@ jobs:
       - IN: fiveOnethreefour
       - OUT: runimagein
       - TASK:
-        - script: cd IN/fiveOnethreefour/gitRepo/run.sh
+        - script: ./IN/fiveOnethreefour/gitRepo/run.sh
