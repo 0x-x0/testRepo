@@ -15,8 +15,4 @@ jobs:
       - IN: fiveOnethreefour
       - OUT: runimagein
       - TASK:
-        - script: cd IN/fiveOnethreefour/gitRepo
-        - script: echo "building..."
-        - script: ls
-        - script: docker build -t runimagein .
-        - script: echo "versionName='$USER' >> /build/state/runimagein.env"
+        - script: cd IN/fiveOnethreefour/gitRepo/run.sh
