@@ -3,7 +3,7 @@ jobs:
     type: runSh
     steps:
       - IN: fiveOnethreefour
-      - IN: shunit_test_runCI
+      #- IN: shunit_test_runCI
       - OUT: runimagein
       - TASK:
         - script: ./IN/fiveOnethreefour/gitRepo/run.sh
