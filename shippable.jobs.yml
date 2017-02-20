@@ -3,7 +3,7 @@ jobs:
     type: runSh
     steps:
       - IN: fiveOnethreefour
-      #- IN: shunit_test_runCI
+      - IN: spcBar_ciRepo
       - OUT: runimagein
       - TASK:
         - script: ./IN/fiveOnethreefour/gitRepo/run.sh
