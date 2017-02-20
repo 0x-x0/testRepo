@@ -6,6 +6,13 @@ resources:
       sourceName: chetantarale/sample-script
       branch: master
 
+  - name: utilities
+    type: gitRepo
+    integration: github
+    pointer:
+      sourceName: chetantarale/utilities
+      branch: master
+   
   - name: runimagein
     type: image
     integration: dockerhub
