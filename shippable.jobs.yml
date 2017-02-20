@@ -3,7 +3,7 @@ jobs:
     type: runSh
     steps:
       - IN: fiveOnethreefour
-      - IN: spcBar_ciRepo
+      - IN: utilities
       - OUT: runimagein
       - TASK:
         - script: ./IN/fiveOnethreefour/gitRepo/run.sh
