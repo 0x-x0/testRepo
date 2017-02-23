@@ -27,4 +27,4 @@ jobs:
       - IN: sample-script
         switch: off
       - TASK:
-        - script: echo "HELLO WORLD!" #IN/sample-script/gitRepo/echo.sh
+        - script: IN/sample-script/gitRepo/echo.sh
