@@ -4,6 +4,7 @@ jobs:
     steps:
       - IN: teamParams
       - IN: fiveOnethreefour
+        switch: off
       - IN: sample-script
       - IN: triggertest1
       - TASK:
@@ -17,6 +18,7 @@ jobs:
     type: runSh
     steps:
       - IN: fiveOnethreefour
+        switch: off
       - IN: teamParams
       - IN: buildJob
       - IN: triggertest1
@@ -42,3 +44,4 @@ jobs:
         switch: off
       - TASK:
         - script: IN/sample-script/gitRepo/echo.sh
+        - script: exit 1;
