@@ -6,7 +6,7 @@ jobs:
       - IN: fiveOnethreefour
       - IN: sample-script
       - TASK:
-        - script: "HELLO WORLD!" #./IN/fiveOnethreefour/gitRepo/run.sh
+        - script: printenv #./IN/fiveOnethreefour/gitRepo/run.sh
     on_success:
       - script: echo 'Locking everyone for good !!!!!'
     on_failure:
