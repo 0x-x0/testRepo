@@ -2,6 +2,7 @@ jobs:
   - name: lockJob
     type: runSh
     steps:
+      - IN: teamParams
       - IN: fiveOnethreefour
       - IN: sample-script
       - TASK:
