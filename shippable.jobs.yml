@@ -22,7 +22,7 @@ jobs:
       - TASK:
         - script: ./IN/fiveOnethreefour/gitRepo/lockNload.sh push
     on_success:
-      - script: echo 'Locking everyone for good !!!!!'
+      - script: echo 'Good Job on last commit !!!!!'
     on_failure:
       - script: echo 'Failed job .... :('
   # - name: rel-job
