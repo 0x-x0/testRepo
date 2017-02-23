@@ -6,26 +6,6 @@ resources:
       sourceName: chetantarale/sample-script
       branch: master
 
-  - name: utilities
-    type: gitRepo
-    integration: github
-    pointer:
-      sourceName: chetantarale/utilities
-      branch: master
-   
-  - name: runimagein
-    type: image
-    integration: dockerhub
-    pointer:
-      sourceName: "library/nginx"
-      isPull: false
-    seed:
-      versionName: latest
-
-  - name: rsakey
-    type: integration
-    integration: "rsakey"
-
   - name: fiveOnethreefour
     type: gitRepo
     integration: github
@@ -33,7 +13,28 @@ resources:
       sourceName: chetantarale/5134
       branch: master
 
-  - name: version
-    type: version
-    seed:
-      versionName: "1.0.0"
+  # - name: utilities
+  #   type: gitRepo
+  #   integration: github
+  #   pointer:
+  #     sourceName: chetantarale/utilities
+  #     branch: master
+
+  # - name: runimagein
+  #   type: image
+  #   integration: dockerhub
+  #   pointer:
+  #     sourceName: "library/nginx"
+  #     isPull: false
+  #   seed:
+  #     versionName: latest
+
+  # - name: rsakey
+  #   type: integration
+  #   integration: "rsakey"
+
+
+  # - name: version
+  #   type: version
+  #   seed:
+  #     versionName: "1.0.0"

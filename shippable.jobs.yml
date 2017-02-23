@@ -1,28 +1,28 @@
 jobs:
-  - name: buildJob
+  - name: lockJob
     type: runSh
     steps:
       - IN: fiveOnethreefour
-      - IN: utilities
-      - OUT: runimagein
+      - IN: sample-script
       - TASK:
-        - script: ./IN/fiveOnethreefour/gitRepo/run.sh
+        - script: "HELLO WORLD!" #./IN/fiveOnethreefour/gitRepo/run.sh
+    on_success:
+      - script: echo 'Locking everyone for good !!!!!'
+    on_failure:
+      - script: echo 'Failed job .... :('
+  # - name: rel-job
+  #   type: release
+  #   steps:
+  #     - IN: runimagein
+  #     - IN: version
+  #     - TASK: managed
+  #       bump: alpha
 
-  - name: rel-job
-    type: release
-    steps:
-      - IN: runimagein
-      - IN: version
-      - TASK: managed
-        bump: alpha
-
-  - name: spaceBar1
+  - name: buildJob
     type: runSh
     steps:
-      - IN: rel-job
+      - IN: lockJob
       - IN: sample-script
-      - IN: triggertest1
-      - IN: rsakey
-      - IN: runimagein
+        switch: off
       - TASK:
-        - script: IN/sample-script/gitRepo/echo.sh
+        - script: echo "HELLO WORLD!" #IN/sample-script/gitRepo/echo.sh
