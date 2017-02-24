@@ -5,8 +5,8 @@ jobs:
       - IN: teamParams
       - IN: configRepo
         switch: off
-      - IN: buildApi
-      - IN: buildWww
+      - IN: apiRepo
+      - IN: wwwRepo
       - IN: triggertest1
       - TASK:
         - script: ./IN/configRepo/gitRepo/lockNload.sh pull
