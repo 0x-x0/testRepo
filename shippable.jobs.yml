@@ -1,12 +1,12 @@
 jobs:
   - name: lockJob
-    type: runCI
+    type: runSh
     steps:
-      # - IN: teamParams
-      # - IN: configRepo
-      #   switch: off
+      - IN: teamParams
+      - IN: configRepo
+        switch: off
       - IN: apiRepo
-      #- IN: wwwRepo
+      - IN: wwwRepo
       - TASK:
         - script: ./IN/apiRepo/gitRepo/lockNload.sh pull
     on_success:
@@ -14,36 +14,36 @@ jobs:
     on_failure:
       - script: echo 'Failed job .... :('
 
-  # - name: unlockJob
-  #   type: runCI
-  #   steps:
-  #     - IN: configRepo
-  #       switch: off
-  #     - IN: teamParams
-  #     - IN: buildApi
-  #     - IN: buildWww
-  #     - TASK:
-  #       - script: ./IN/configRepo/gitRepo/lockNload.sh push
-  #   on_success:
-  #     - script: echo 'Good Job on last commit !!!!!'
-  #   on_failure:
-  #     - script: echo 'Failed job .... :('
+  - name: unlockJob
+    type: runSh
+    steps:
+      - IN: configRepo
+        switch: off
+      - IN: teamParams
+      - IN: buildApi
+      - IN: buildWww
+      - TASK:
+        - script: ./IN/configRepo/gitRepo/lockNload.sh push
+    on_success:
+      - script: echo 'Good Job on last commit !!!!!'
+    on_failure:
+      - script: echo 'Failed job .... :('
 
-  # - name: buildApi
-  #   type: runCI
-  #   steps:
-  #     #- IN: lockJob
-  #     - IN: apiRepo
-  #       switch: off
-  #     - TASK:
-  #       - script: IN/apiRepo/gitRepo/echo.sh
-  #       - script: exit 1;
+  - name: buildApi
+    type: runSh
+    steps:
+      #- IN: lockJob
+      - IN: apiRepo
+        switch: off
+      - TASK:
+        - script: IN/apiRepo/gitRepo/echo.sh
+        - script: exit 1;
 
-  # - name: buildWww
-  #   type: runCI
-  #   steps:
-  #     #- IN: lockJob
-  #     - IN: wwwRepo
-  #       switch: off
-  #     - TASK:
-  #       - script: IN/wwwRepo/gitRepo/echo.sh
+  - name: buildWww
+    type: runSh
+    steps:
+      #- IN: lockJob
+      - IN: wwwRepo
+        switch: off
+      - TASK:
+        - script: IN/wwwRepo/gitRepo/echo.sh
