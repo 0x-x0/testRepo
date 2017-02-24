@@ -37,7 +37,6 @@ jobs:
         switch: off
       - TASK:
         - script: IN/apiRepo/gitRepo/echo.sh
-        - script: exit 1;
 
   - name: buildWww
     type: runSh
@@ -46,4 +45,5 @@ jobs:
       - IN: wwwRepo
         switch: off
       - TASK:
+        - script: chmod +x IN/wwwRepo/gitRepo/echo.sh
         - script: IN/wwwRepo/gitRepo/echo.sh
