@@ -20,14 +20,24 @@ jobs:
       - IN: configRepo
         switch: off
       - IN: teamParams
-      - IN: buildApi
-      - IN: buildWww
+      - IN: intermediateJobs
+      - IN: apiRepo
+      - IN: wwwRepo
       - TASK:
         - script: ./IN/configRepo/gitRepo/lockNload.sh push
     on_success:
       - script: echo 'Good Job on last commit !!!!!'
     on_failure:
       - script: echo 'Failed job .... :('
+
+  - name: intermediateJobs
+    type: runSh
+    steps:
+      - IN: buildApi
+      - IN: buildWww
+      - TASK:
+        - script: echo "I'm the intermediateJobs"
+
 
   - name: buildApi
     type: runSh
