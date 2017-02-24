@@ -2,9 +2,9 @@ jobs:
   - name: lockJob
     type: runCI
     steps:
-      #- IN: teamParams
-      #- IN: configRepo
-      #  switch: off
+      - IN: teamParams
+      - IN: configRepo
+        switch: off
       - IN: apiRepo
       - IN: wwwRepo
       - TASK:
@@ -20,8 +20,8 @@ jobs:
       - IN: configRepo
         switch: off
       - IN: teamParams
-      # - IN: buildApi
-      # - IN: buildWww
+      - IN: buildApi
+      - IN: buildWww
       - TASK:
         - script: ./IN/configRepo/gitRepo/lockNload.sh push
     on_success:
@@ -32,7 +32,7 @@ jobs:
   - name: buildApi
     type: runCI
     steps:
-      - IN: lockJob
+      #- IN: lockJob
       - IN: apiRepo
         switch: off
       - TASK:
@@ -42,7 +42,7 @@ jobs:
   - name: buildWww
     type: runCI
     steps:
-      - IN: lockJob
+      #- IN: lockJob
       - IN: wwwRepo
         switch: off
       - TASK:
