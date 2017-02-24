@@ -8,7 +8,7 @@ jobs:
       - IN: apiRepo
       - IN: wwwRepo
       - TASK:
-        - script: ./IN/apiRepo/gitRepo/lockNload.sh pull
+        - script: ./IN/configRepo/gitRepo/lockNload.sh pull
     on_success:
       - script: echo 'Locking everyone for good !!!!!'
     on_failure:
