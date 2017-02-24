@@ -1,6 +1,6 @@
 jobs:
   - name: lockJob
-    type: runSh
+    type: runCI
     steps:
       - IN: teamParams
       - IN: configRepo
@@ -16,7 +16,7 @@ jobs:
       - script: echo 'Failed job .... :('
 
   - name: unlockJob
-    type: runSh
+    type: runCI
     steps:
       - IN: configRepo
         switch: off
@@ -32,7 +32,7 @@ jobs:
       - script: echo 'Failed job .... :('
 
   - name: buildApi
-    type: runSh
+    type: runCI
     steps:
       - IN: lockJob
       - IN: apiRepo
@@ -42,11 +42,10 @@ jobs:
         - script: exit 1;
 
   - name: buildWww
-    type: runSh
+    type: runCI
     steps:
       - IN: lockJob
       - IN: wwwRepo
         switch: off
       - TASK:
         - script: IN/wwwRepo/gitRepo/echo.sh
-        - script: exit 1;
