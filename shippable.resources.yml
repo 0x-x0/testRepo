@@ -6,6 +6,13 @@ resources:
       sourceName: chetantarale/sample-script
       branch: master
 
+  - name: wwwRepo
+    type: gitRepo
+    integration: github
+    pointer:
+      sourceName: chetantarale/shunit
+      branch: master
+
   - name: configRepo
     type: gitRepo
     integration: github
