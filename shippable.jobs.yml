@@ -21,8 +21,8 @@ jobs:
       - IN: configRepo
         switch: off
       - IN: teamParams
-      - IN: buildApi
-      - IN: buildWww
+      # - IN: buildApi
+      # - IN: buildWww
       - IN: triggertest1
       - TASK:
         - script: ./IN/configRepo/gitRepo/lockNload.sh push
