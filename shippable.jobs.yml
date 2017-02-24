@@ -3,13 +3,13 @@ jobs:
     type: runCI
     steps:
       #- IN: teamParams
-      - IN: configRepo
+      #- IN: configRepo
       #  switch: off
       - IN: apiRepo
       - IN: wwwRepo
       # - IN: triggertest1
       - TASK:
-        - script: ./IN/configRepo/gitRepo/lockNload.sh pull
+        - script: ./IN/apiRepo/gitRepo/lockNload.sh pull
     on_success:
       - script: echo 'Locking everyone for good !!!!!'
     on_failure:
