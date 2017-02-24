@@ -1,11 +1,25 @@
 jobs:
-  - name: lockJob
+  - name: lock_n_build_api
     type: runSh
     steps:
       - IN: teamParams
       - IN: configRepo
         switch: off
       - IN: apiRepo
+      - IN: wwwRepo
+      - TASK:
+        - script: ./IN/configRepo/gitRepo/lockNload.sh pull
+    on_success:
+      - script: echo 'Locking everyone for good !!!!!'
+    on_failure:
+      - script: echo 'Failed job .... :('
+
+  - name: lock_n_build_www
+    type: runSh
+    steps:
+      - IN: teamParams
+      - IN: configRepo
+        switch: off
       - IN: wwwRepo
       - TASK:
         - script: ./IN/configRepo/gitRepo/lockNload.sh pull
@@ -42,7 +56,7 @@ jobs:
   - name: buildApi
     type: runSh
     steps:
-      - IN: lockJob
+      - IN: lock_n_build_api
       - IN: apiRepo
         switch: off
       - TASK:
@@ -51,7 +65,7 @@ jobs:
   - name: buildWww
     type: runSh
     steps:
-      - IN: lockJob
+      - IN: lock_n_build_www
       - IN: wwwRepo
         switch: off
       - TASK:
