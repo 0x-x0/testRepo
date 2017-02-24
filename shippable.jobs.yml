@@ -34,8 +34,6 @@ jobs:
         switch: off
       - IN: teamParams
       - IN: intermediateJobs
-      - IN: apiRepo
-      - IN: wwwRepo
       - TASK:
         - script: ./IN/configRepo/gitRepo/lockNload.sh push
     on_success:
