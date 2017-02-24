@@ -3,8 +3,8 @@ jobs:
     type: runCI
     steps:
       - IN: teamParams
-      - IN: configRepo
-        switch: off
+      # - IN: configRepo
+      #   switch: off
       # - IN: apiRepo
       # - IN: wwwRepo
       # - IN: triggertest1
