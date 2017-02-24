@@ -32,7 +32,7 @@ jobs:
   - name: buildApi
     type: runSh
     steps:
-      #- IN: lockJob
+      - IN: lockJob
       - IN: apiRepo
         switch: off
       - TASK:
@@ -42,7 +42,7 @@ jobs:
   - name: buildWww
     type: runSh
     steps:
-      #- IN: lockJob
+      - IN: lockJob
       - IN: wwwRepo
         switch: off
       - TASK:
