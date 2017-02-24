@@ -1,12 +1,12 @@
 resources:
-  - name: sample-script
+  - name: apiRepo
     type: gitRepo
     integration: github
     pointer:
       sourceName: chetantarale/sample-script
       branch: master
 
-  - name: fiveOnethreefour
+  - name: configRepo
     type: gitRepo
     integration: github
     pointer:

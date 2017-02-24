@@ -3,12 +3,12 @@ jobs:
     type: runSh
     steps:
       - IN: teamParams
-      - IN: fiveOnethreefour
+      - IN: configRepo
         switch: off
-      - IN: sample-script
+      - IN: apiRepo
       - IN: triggertest1
       - TASK:
-        - script: ./IN/fiveOnethreefour/gitRepo/lockNload.sh pull
+        - script: ./IN/configRepo/gitRepo/lockNload.sh pull
     on_success:
       - script: echo 'Locking everyone for good !!!!!'
     on_failure:
@@ -17,13 +17,13 @@ jobs:
   - name: unlockJob
     type: runSh
     steps:
-      - IN: fiveOnethreefour
+      - IN: configRepo
         switch: off
       - IN: teamParams
       - IN: buildJob
       - IN: triggertest1
       - TASK:
-        - script: ./IN/fiveOnethreefour/gitRepo/lockNload.sh push
+        - script: ./IN/configRepo/gitRepo/lockNload.sh push
     on_success:
       - script: echo 'Good Job on last commit !!!!!'
     on_failure:
@@ -40,8 +40,8 @@ jobs:
     type: runSh
     steps:
       - IN: lockJob
-      - IN: sample-script
+      - IN: apiRepo
         switch: off
       - TASK:
-        - script: IN/sample-script/gitRepo/echo.sh
+        - script: IN/apiRepo/gitRepo/echo.sh
         - script: exit 1;
