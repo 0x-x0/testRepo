@@ -6,7 +6,6 @@ jobs:
       - IN: configRepo
         switch: off
       - IN: apiRepo
-      - IN: wwwRepo
       - TASK:
         - script: ./IN/configRepo/gitRepo/lockNload.sh pull
     on_success:
