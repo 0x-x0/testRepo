@@ -6,25 +6,25 @@ resources:
       sourceName: chetantarale/sample-script
       branch: master
 
-  - name: wwwRepo
-    type: gitRepo
-    integration: github
-    pointer:
-      sourceName: chetantarale/shunit
-      branch: master
+  # - name: wwwRepo
+  #   type: gitRepo
+  #   integration: github
+  #   pointer:
+  #     sourceName: chetantarale/shunit
+  #     branch: master
 
-  - name: configRepo
-    type: gitRepo
-    integration: github
-    pointer:
-      sourceName: chetantarale/5134
-      branch: master
+  # - name: configRepo
+  #   type: gitRepo
+  #   integration: github
+  #   pointer:
+  #     sourceName: chetantarale/5134
+  #     branch: master
 
-  - name: teamParams
-    type: params
-    version:
-      params:
-        secure: wKTCqYn77+XbtF+ETRqP81hhakrW+3R/cHiZzAuCRhbJRzUzJ4iQ2pLopgfnPisNm/7Hr1kEZaZ849oy1MjYssLRJDtXEZ7T8XU/Y+b9XKjAIQ8ubQrJ14FisP0ildsTqpu6BWgpQBGxRtK6RcwoDQCh2YOK4zUsd3MrAIEs4I7ZjLOckz1HnuoK6PVHCQ8gLKA6z/ZqBmKTvLYmIZK+/f248i+jri7IgY0M/xFymcTSFHzWxYxLiHd0VU2NYzmacSow4djONHf5cGhM+x04Qmo4VggWljdzsqO8z64tJlMoodY2EfcQcf/iZyzKc+7ZTyF8ORCW9ZU2jd7oH4dqwA==
+  # - name: teamParams
+  #   type: params
+  #   version:
+  #     params:
+  #       secure: wKTCqYn77+XbtF+ETRqP81hhakrW+3R/cHiZzAuCRhbJRzUzJ4iQ2pLopgfnPisNm/7Hr1kEZaZ849oy1MjYssLRJDtXEZ7T8XU/Y+b9XKjAIQ8ubQrJ14FisP0ildsTqpu6BWgpQBGxRtK6RcwoDQCh2YOK4zUsd3MrAIEs4I7ZjLOckz1HnuoK6PVHCQ8gLKA6z/ZqBmKTvLYmIZK+/f248i+jri7IgY0M/xFymcTSFHzWxYxLiHd0VU2NYzmacSow4djONHf5cGhM+x04Qmo4VggWljdzsqO8z64tJlMoodY2EfcQcf/iZyzKc+7ZTyF8ORCW9ZU2jd7oH4dqwA==
 
   # - name: utilities
   #   type: gitRepo
