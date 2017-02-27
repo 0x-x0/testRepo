@@ -24,8 +24,8 @@ resources:
     type: params
     version:
       params:
-        secure: tLpgyqtYn4rHR16LQqEAgvJgOTRbLBOwN6zCSNa4aqkmVDLSOzzQ4HJk/976gfgEN7Fb8WItqAKabsrNoUKqIQBeQ4gMwDb+Ov+JLzyyFDg72rrur8k5T8L0nTRnuhUyNvnaVwaluKj1yAsg1M04zmHvjQssCkcD4ZlQ65DO2UqRGvfzqliiol0aAUsCiYPxnHj3pTbmix2Gy6Z3p4HWhWQkcUyPfqVR/UuHMWBxVN9RxdXqFuzy7UFv8d+jqwIq4mVnkxFmoE6r8YdZLvGBVAxdpKJ5vBdNeXn3E2G0e5IFQj450jWHyK4z7w8C5izc3k39Fs6+YgAJljjN9laIgw==
-
+        secure: bY9fGZSRx7oVDH2ibW1gNO7Uo9U8s/bfnLckyl+tq0Gvpc/6IebhurOUohGaiXlyyNV5ED+jG4QUJBtZqRVkklxM4gFJKNHeJPKiAxeH23u7yU2+0A1gttw0LgS+AwLuELx9SrasayJG55l9kSjkjkfTpIWywBYH6asKH/5OiWDvkgS67WvNokqErdzDWrm4pJuMCE4BF4SLKC6lLUbTp2xQjlBUTZNyEvBoYhjNAUXoI4EDMSI4aXxXVfa5ZK4HaeGcx8Pg4cQMPZTvretGskUtA3lvLPZnQABcE5vAfyPsbCv2/9eAxPqf2/I6XZs5AP+SH70+YhCIrXGRLRUkPA==
+  
   - name: apiVer
     type: version                               #required
     seed:
