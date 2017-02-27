@@ -24,7 +24,7 @@ resources:
     type: params
     version:
       params:
-        secure: bY9fGZSRx7oVDH2ibW1gNO7Uo9U8s/bfnLckyl+tq0Gvpc/6IebhurOUohGaiXlyyNV5ED+jG4QUJBtZqRVkklxM4gFJKNHeJPKiAxeH23u7yU2+0A1gttw0LgS+AwLuELx9SrasayJG55l9kSjkjkfTpIWywBYH6asKH/5OiWDvkgS67WvNokqErdzDWrm4pJuMCE4BF4SLKC6lLUbTp2xQjlBUTZNyEvBoYhjNAUXoI4EDMSI4aXxXVfa5ZK4HaeGcx8Pg4cQMPZTvretGskUtA3lvLPZnQABcE5vAfyPsbCv2/9eAxPqf2/I6XZs5AP+SH70+YhCIrXGRLRUkPA==
+        secure: WglG1Zvznxea/9+gPuyHr2u3lg5d766siB37AZG/vmNbZjtlA1tq934YKef9ogN1/OrdLazq5QINdhZbHwy2MflIylwywIxoeRa0fey34kVAg98SSUIG7kt/TAz4lmUQzcrCxWXchVe0yA7nQ9Zw66Gi3hhuoOj93G8lLwf1eqUeKENrhZ3Ze4PJGJ59BYhrlsv1hf5rZCxnCzwU+/dR44MasYGH5DxSSxlSAqnTsK3k5gTMTIsmMofN/4VYaUjPdwFK+kq+Vw20oWnzJYOisS3Z6u/aD6JgJIGoSBZ19CZfuHPMAgwAt3tOazYF5Hlivwy0m0onPpZnDVEwYvsYGw==  
   
   - name: apiVer
     type: version                               #required
