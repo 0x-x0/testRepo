@@ -63,8 +63,7 @@ jobs:
         - script: tree
         - script: echo '----- Running cat command -----'
         - script: cat /build/state/apiRepo.env
-
-        
+       
   - name: buildWww
     type: runSh
     steps:
@@ -74,3 +73,9 @@ jobs:
       - TASK:
         - script: chmod +x IN/wwwRepo/gitRepo/echo.sh
         - script: IN/wwwRepo/gitRepo/echo.sh
+        
+  - name: php7_runCI
+    type: runCI
+    steps:
+      - IN: prtest_runCI
+
