@@ -24,6 +24,10 @@ resources:
     type: params
     version:
       params:
+        TEAM_ID: 2148116
+        TEAM_NAME: "ship"
+        ORG_NAME: "shipperOrg"
+        GITHUB_API_URL: 'https://api.github.com'
         secure: WglG1Zvznxea/9+gPuyHr2u3lg5d766siB37AZG/vmNbZjtlA1tq934YKef9ogN1/OrdLazq5QINdhZbHwy2MflIylwywIxoeRa0fey34kVAg98SSUIG7kt/TAz4lmUQzcrCxWXchVe0yA7nQ9Zw66Gi3hhuoOj93G8lLwf1eqUeKENrhZ3Ze4PJGJ59BYhrlsv1hf5rZCxnCzwU+/dR44MasYGH5DxSSxlSAqnTsK3k5gTMTIsmMofN/4VYaUjPdwFK+kq+Vw20oWnzJYOisS3Z6u/aD6JgJIGoSBZ19CZfuHPMAgwAt3tOazYF5Hlivwy0m0onPpZnDVEwYvsYGw==  
   
   - name: apiVer
