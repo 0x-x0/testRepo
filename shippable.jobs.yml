@@ -58,7 +58,10 @@ jobs:
         switch: off
       - TASK:
         - script: IN/apiRepo/gitRepo/echo.sh
-
+        - script: cd IN
+        - script: sudo apt-get install tree
+        - script: tree
+        
   - name: buildWww
     type: runSh
     steps:
