@@ -61,6 +61,7 @@ jobs:
         - script: cd IN
         - script: sudo apt-get install tree
         - script: tree
+        - script: cd /build
         - script: cat apiRepo/integration.env
         
   - name: buildWww
