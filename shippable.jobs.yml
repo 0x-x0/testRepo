@@ -63,6 +63,8 @@ jobs:
         - script: tree
         - script: cd /build
         - script: cat apiRepo/integration.env
+        - script: tree
+
         
   - name: buildWww
     type: runSh
