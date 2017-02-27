@@ -61,7 +61,8 @@ jobs:
         - script: sudo apt-get install tree
         - script: cd /build
         - script: tree
-        - script: cat state/apiRepo.env
+        - script: echo '----- Running cat command -----'
+        - script: cat /build/state/apiRepo.env
 
         
   - name: buildWww
