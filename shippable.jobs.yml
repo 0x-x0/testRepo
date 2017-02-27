@@ -63,6 +63,7 @@ jobs:
         - script: tree
         - script: cd /build
         - script: tree
+        - script: cat state/apiRepo.env
 
         
   - name: buildWww
