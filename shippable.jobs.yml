@@ -58,9 +58,7 @@ jobs:
         switch: off
       - TASK:
         - script: IN/apiRepo/gitRepo/echo.sh
-        - script: cd IN
         - script: sudo apt-get install tree
-        - script: tree
         - script: cd /build
         - script: tree
         - script: cat state/apiRepo.env
