@@ -24,7 +24,7 @@ resources:
     type: params
     version:
       params:
-        secure: gS0q/t0+AZERch7L7X06MZapFcoBdqAT66kzpRtDHW4GT8mYs7FINh/qIob/Qe4FOpb2aZXpf7kAHi+as3IbYlAxy9LduVe7KUn3tIDGoof4Q6n1kn6sXd5/uI2PQD45ls8ky5U9Hh9OxHztqdIpnOB9ta89KNDrX513qbychvJOYhzPsFoPIlFK875/4J3isr7v7S1q3cyYDwmjadWsKtKTpq1Obb/YxeChBGicyiCW2PWDe65Sb088CCjxMlg3gf/aVrIKhYRIEVzmyISLJ/oT+3iJT5v7759t/W1fIz2QGwKkyQaHP9AlqyIk1HT1x02764uSI8sTuSmv8ww6nw==  - name: apiVer                         #required
+        secure: gS0q/t0+AZERch7L7X06MZapFcoBdqAT66kzpRtDHW4GT8mYs7FINh/qIob/Qe4FOpb2aZXpf7kAHi+as3IbYlAxy9LduVe7KUn3tIDGoof4Q6n1kn6sXd5/uI2PQD45ls8ky5U9Hh9OxHztqdIpnOB9ta89KNDrX513qbychvJOYhzPsFoPIlFK875/4J3isr7v7S1q3cyYDwmjadWsKtKTpq1Obb/YxeChBGicyiCW2PWDe65Sb088CCjxMlg3gf/aVrIKhYRIEVzmyISLJ/oT+3iJT5v7759t/W1fIz2QGwKkyQaHP9AlqyIk1HT1x02764uSI8sTuSmv8ww6nw==
 
   - name: apiVer
     type: version                               #required
